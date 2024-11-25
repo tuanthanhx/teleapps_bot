@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "main": "api/bot.js",
   "scripts": {
-    "start": "node api/bot.js"
+    "dev": "cross-env NODE_ENV=development nodemon api/bot.js",
+    "start": "cross-env NODE_ENV=production node api/bot.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "node-telegram-bot-api": "^0.66.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
