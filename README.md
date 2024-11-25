@@ -1,6 +1,9 @@
 # Set Telegram Webhook
 curl -F "url=https://bot-20241126.teleapps.store/api/botv4" https://api.telegram.org/botYOUR_TELEGRAM_TOKEN/setWebhook
 
+# Delete Telegram Webhook
+curl -X POST https://api.telegram.org/botYOUR_TELEGRAM_TOKEN/deleteWebhook
+
 # Test Ping
 
 ```
