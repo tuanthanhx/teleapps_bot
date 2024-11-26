@@ -42,7 +42,7 @@ bot.on('message', (msg) => {
   } else if (text === '🚀 Apps Center') {
     bot.sendMessage(chatId, 'Opening the Apps Center...', {
       reply_markup: {
-        inline_keyboard: [[{ text: 'Open MiniApp', url: 'https://t.me/teleapps_market_bot/market' }]],
+        inline_keyboard: [[{ text: 'Open MiniApp', url: 'https://teleapps.store/' }]],
       },
     });
   } else {
