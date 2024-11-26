@@ -21,7 +21,7 @@ bot.setWebHook(`${baseUrl}/api/bot${version}`);
 const replyKeyboard = {
   reply_markup: {
     keyboard: [
-      [{ text: '🚀 Apps Center', web_app: { url: 'https://teleapps.store/' } }],
+      [{ text: '🚀 Apps Center' }],
       [{ text: '🤝 Join our community' }],
       [{ text: '📢 Join our X' }],
     ],
@@ -39,6 +39,12 @@ bot.on('message', (msg) => {
     bot.sendMessage(chatId, 'Join us here: https://t.me/TeleAppsCommunity');
   } else if (text === '📢 Join our X') {
     bot.sendMessage(chatId, 'Join us here: https://x.com/TeleApps_store');
+  } else if (text === '🚀 Apps Center') {
+    bot.sendMessage(chatId, 'Opening the Apps Center...', {
+      reply_markup: {
+        inline_keyboard: [[{ text: 'Open MiniApp', url: 'https://t.me/teleapps_market_bot/market' }]],
+      },
+    });
   } else {
     bot.sendMessage(chatId, 'Welcome on board!', replyKeyboard);
   }
