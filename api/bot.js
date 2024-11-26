@@ -21,7 +21,7 @@ bot.setWebHook(`${baseUrl}/api/bot${version}`);
 const replyKeyboard = {
   reply_markup: {
     keyboard: [
-      [{ text: '🚀 Apps Center', web_app: { url: 'https://teleapps.store/' } }],
+      [{ text: '🚀 Apps Center', web_app: { url: 'https://t.me/teleapps_market_bot/market' } }],
       [{ text: '🤝 Join our community' }],
       [{ text: '📢 Join our X' }],
     ],
